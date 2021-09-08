@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header {% if type %}header--{{ type }}{% endif %}">
     <div class="header__content content">
         <div class="header__logo logo">
             <a class="logo__link" href="/">
@@ -7,7 +7,7 @@
         </div>
         <ul class="header__links links">
             <li class="links__item links__item--vacancies">
-                <a class="links__link" href="#vacancies">Вакансии</a>
+                <a class="links__link" href="/#vacancies">Вакансии</a>
             </li>
             <li class="links__item links__item--mail">
                 <a class="links__link" href="mailto:hr@plesk.com" target="_blank" rel="noopener noreferrer">
@@ -28,23 +28,3 @@
         </ul>
     </div>
 </header>
-
-<div class="hero">
-    <div class="hero__content content">
-        <h1 class="visually-hidden">Работа в Plesk</h1>
-
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="#product" class="navigation__link" lang="en">Product</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#people" class="navigation__link" lang="en">People</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#process" class="navigation__link" lang="en">Process</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>

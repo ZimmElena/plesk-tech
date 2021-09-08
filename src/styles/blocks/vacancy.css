@@ -1,0 +1,148 @@
+.vacancy__heading {
+    padding: 0.77rem 0;
+    background-color: #009bec;
+}
+
+@media (min-width: 769px) {
+    .vacancy__heading {
+        margin-top: 52px;
+        padding: 0.77rem 0;
+    }
+}
+
+.vacancy__title {
+    font-weight: 500;
+    font-size: 1.77em;
+}
+
+.vacancy__button {
+    margin: 0 1.77rem 1rem 0;
+    padding: 0.44rem 1.77rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.22;
+    text-align: center;
+    text-decoration: none;
+    background-color: #009bec;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.vacancy__button:hover {
+    background-color: #15a9f6;
+}
+
+@media (min-width: 540px) {
+    .vacancy__button {
+        padding: 0.66rem 2.33rem;
+        font-weight: 700;
+        font-size: clamp(1rem, 3vw, 1.11rem);
+    }
+}
+
+@media (min-width: 769px) {
+    .vacancy__button {
+        font-size: 1.11rem;
+    }
+}
+
+.vacancy__heading .button {
+    margin-top: 1em;
+    color: #414e5a;
+    background-color: #ffffff;
+}
+
+.vacancy__heading .button:hover {
+    background-color: #cbf0fd;
+}
+
+.vacancy__heading a {
+    color: #d6f5fc;
+}
+
+.vacancy__heading a:hover {
+    color: #ffffff;
+}
+
+.vacancy__back-link {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 1em;
+    font-size: 0.77em;
+    white-space: nowrap;
+}
+
+.vacancy__back-link > svg {
+    margin-right: 0.44em;
+}
+
+.vacancy__item {
+    min-height: 11ch;
+    padding-left: 20%;
+    background: 0 0 no-repeat;
+    background-size: 15% auto;
+}
+
+@media (min-width: 540px) {
+    .vacancy__item {
+        min-height: 95px;
+        padding-left: 119px;
+        background-size: 95px auto;
+    }
+}
+
+.vacancy__item + .vacancy__item {
+    margin-top: 2rem;
+}
+
+.vacancy__item:nth-child(1) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 96 96'%3E%3Ccircle cx='48' cy='48' r='48' fill='%2353BCE7'/%3E%3Cpath fill='%23fff' d='M37.3 59.8a1.5 1.5 0 00-2.1-2.1l-8.8 8.7a1.5 1.5 0 102.2 2.2l8.7-8.8zM33.6 56a1.5 1.5 0 10-2.2-2l-5 5a1.5 1.5 0 102.2 2l5-5zM41 63.6a1.5 1.5 0 00-2-2.2l-5 5a1.5 1.5 0 102 2.2l5-5z'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M46 67.1a8 8 0 001-5.9c2.6-1.4 5.8-3.5 8.5-5.5A18.6 18.6 0 0146 67zM37.2 48c2-3.4 4.8-7.4 7.1-9.6a35.6 35.6 0 0123.5-11.2c-.2 3-.8 6-1.7 8.8H50.9c-3.3 0-5 4-2.6 6.4l4.3 4.3c.5.5.1 1.3-.5 1.3H37.2zm9 10.2c3.6-2 8-5 10.4-7.5 3.8-3.8 6.5-7.6 8.3-11.7H51c-.6 0-1 .8-.5 1.3l4.3 4.3c2.4 2.4.7 6.4-2.6 6.4H39l7.2 7.2zm-13.2-9a71.5 71.5 0 016.4-9.7A18.6 18.6 0 0027.9 49a8 8 0 015.9-1l-.8 1.2zM71 25a38.9 38.9 0 01-12 27.6 21.5 21.5 0 01-17.4 19.3l-1.1.2c-1.3.2-2-1.4-1-2.3l3.3-3.3c2-2 2-5.1 0-7l-7.1-7.2a5 5 0 00-7.1 0l-3.3 3.3c-1 1-2.5.3-2.3-1l.2-1v-.1a21.5 21.5 0 0119.3-17.5l-.3.3a39 39 0 0128-12.2c.4 0 .8.4.8.9z' clip-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.vacancy__item:nth-child(2) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 95 95'%3E%3Ccircle cx='47.5' cy='47.5' r='47.5' fill='%2353BCE7'/%3E%3Cpath fill='%23fff' d='M48 56.53a7.4 7.4 0 10.02-14.8 7.4 7.4 0 00-.02 14.8zm0-11.83a4.44 4.44 0 11.02 8.9 4.44 4.44 0 01-.02-8.91v.01zM53.86 56.94c-1.52.14-3 .56-4.37 1.24-.52.22-1 .43-1.49.59-.47-.16-1-.37-1.5-.59a12.2 12.2 0 00-4.36-1.24 5.84 5.84 0 00-5.83 5.83v7.76a1.47 1.47 0 102.94 0v-7.76a2.87 2.87 0 012.62-2.87 9.2 9.2 0 013.77 1.07c.57.25 1.11.48 1.6.65.5.16 1.03.16 1.52 0 .49-.17 1-.4 1.6-.65a9.15 9.15 0 013.77-1.07 2.87 2.87 0 012.62 2.87v7.76a1.47 1.47 0 102.94 0v-7.76a5.84 5.84 0 00-5.83-5.83zM35.68 38.79a7.4 7.4 0 10.04-14.8 7.4 7.4 0 00-.04 14.8zm0-11.83a4.44 4.44 0 11.02 8.88 4.44 4.44 0 01-.02-8.88zM60.31 38.79a7.4 7.4 0 10.02-14.8 7.4 7.4 0 00-.02 14.8zm0-11.83a4.44 4.44 0 11.02 8.88 4.44 4.44 0 01-.02-8.88zM44.38 39.94a5.77 5.77 0 00-2.83-.74c-1.52.14-3 .56-4.36 1.24-.53.21-1 .42-1.5.59-.46-.17-1-.38-1.5-.59a12.2 12.2 0 00-4.36-1.24A5.83 5.83 0 0024 45.03v7.76a1.47 1.47 0 002.94 0v-7.76a2.87 2.87 0 012.62-2.87c1.32.08 2.6.45 3.77 1.07.57.25 1.11.48 1.6.64.5.17 1.03.17 1.52 0 .49-.16 1-.39 1.6-.64.93-.43 1.9-.77 2.9-1 .97-1 2.14-1.78 3.43-2.29zM66.17 39.2c-1.52.14-3 .56-4.37 1.24-.53.21-1 .42-1.49.59-.47-.17-1-.38-1.5-.59a12.2 12.2 0 00-4.36-1.24c-1 0-1.97.25-2.83.74 1.3.5 2.46 1.28 3.43 2.27 1 .23 1.96.57 2.89 1 .58.25 1.12.48 1.61.64.5.17 1.03.17 1.52 0 .48-.16 1-.39 1.6-.64 1.16-.63 2.45-1 3.77-1.07a2.87 2.87 0 012.62 2.87v7.76a1.47 1.47 0 002.94 0v-7.76a5.84 5.84 0 00-5.83-5.81z'/%3E%3C/svg%3E");
+}
+
+.vacancy__description:nth-child(odd) {
+    background-color: #f8f9fd;
+}
+
+.vacancy h3 {
+    font-size: 1.8rem;
+}
+
+.vacancy__intro h3 {
+    color: #5e7389;
+}
+
+@media (min-width: 769px) {
+    .vacancy__intro,
+    .vacancy__description {
+        padding: 2rem 0;
+    }
+
+    .vacancy__intro .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .vacancy__item + .vacancy__item {
+        margin-top: 0;
+    }
+
+    .vacancy__item {
+        padding-left: 0;
+        background-position: 50% 3.5rem;
+    }
+
+    .vacancy__intro h3 {
+        margin-bottom: 7rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}

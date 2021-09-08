@@ -1,4 +1,4 @@
-.footer {
+.footer--main {
     background-color: #2b2f39;
 }
 
@@ -7,4 +7,41 @@
     padding-bottom: 1.11rem;
     color: #8e91ad;
     text-align: center;
+}
+
+.footer--inner {
+    flex: none;
+    background-color: #f8f9fd;
+}
+
+.footer__links {
+    display: inline-flex;
+    margin: 0.5em 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__links > li + li {
+    margin-left: 1.11em;
+}
+
+.footer__links .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__link {
+    color: #aaacc1;
+}
+
+@media (min-width: 769px) {
+    .footer--inner .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__links {
+        margin-top: 0;
+    }
 }

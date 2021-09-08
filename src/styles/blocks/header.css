@@ -37,14 +37,27 @@
 .header--sticky {
     position: fixed;
     z-index: 100;
+}
+
+.header--inner,
+.header--sticky {
     background-color: #fffffff2;
     box-shadow: 0 3px 4px 0 #00000028;
 }
 
+.header--inner .header__content,
 .header--sticky .header__content {
-    height: 52px;
+    height: auto;
 }
 
+@media (min-width: 769px) {
+    .header--inner .header__content,
+    .header--sticky .header__content {
+        height: 52px;
+    }
+}
+
+.header--inner .logo__image,
 .header--sticky .logo__image {
     width: auto;
     height: 32px;

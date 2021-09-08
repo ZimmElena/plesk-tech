@@ -4,16 +4,9 @@
         <div class="flow">
             <h3 class="section__title title">Вакансии</h3>
             <ul class="vacancies__list">
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/45741509">Product Manager</a></li>            
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/46318560">Security engineer</a></li>
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/42105232">Senior JavaScript Developer (Core Team)</a></li>
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/42033411">Senior PHP Developer (Core)</a></li>
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/43405448">Tech Lead (Core)</a></li>
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/46661630">DevOps engineer</a></li>
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/47421068">Full stack PHP/JavaScript developer (Modules)</a></li>
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/47390367">Middle Developer PHP/JS (SolusIO)</a></li>
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/44361762">UX designer</a></li>
-                <li class="vacancies__item"><a href="https://novosibirsk.hh.ru/vacancy/44612135">Global Service Desk Engineer</a></li>
+                {%- for vacancy in collections.vacancies -%}
+                    <li class="vacancies__item"><a href="{{ vacancy.url }}">{{ vacancy.data.title }}</a></li>
+                {%- endfor -%}
             </ul>
         </div>
     </div>

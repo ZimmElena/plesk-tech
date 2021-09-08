@@ -1,7 +1,35 @@
-<footer class="footer">
+<footer class="footer {% if type %}footer--{{ type }}{% endif %}">
     <div class="footer__content content">
         <p class="footer__copy">
-            <span class="footer__organization">&copy;&nbsp;2021 Plesk International GmbH. All rights reserved.</span>
+            <span class="footer__organization" lang="en">&copy;&nbsp;2021 Plesk International GmbH. All rights reserved.</span>
         </p>
+        {% if type and type === 'inner' %}
+            <ul class="footer__links">
+                <li>
+                    <a class="footer__link" href="https://habr.com/ru/company/plesk/" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--habr" focusable="false" aria-hidden="true"><use xlink:href="/images/symbols.svg#habr"></use></svg>
+                        <span class="visually-hidden" lang="en">Habr</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__link" href="https://www.facebook.com/Pleskians/" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--facebook" focusable="false" aria-hidden="true"><use xlink:href="/images/symbols.svg#facebook"></use></svg>
+                        <span class="visually-hidden" lang="en">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__link" href="https://www.youtube.com/channel/UCHh7eL9l5mBji1CJMqlUpOw" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--youtube" focusable="false" aria-hidden="true"><use xlink:href="/images/symbols.svg#youtube"></use></svg>
+                        <span class="visually-hidden" lang="en">Youtube</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__link" href="https://t.me/qa_siberia" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--telegram" focusable="false" aria-hidden="true"><use xlink:href="/images/symbols.svg#telegram"></use></svg>
+                        <span class="visually-hidden" lang="en">Telegram</span>
+                    </a>
+                </li>
+            </ul>
+        {% endif %}
     </div>
 </footer>

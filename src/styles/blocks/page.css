@@ -22,3 +22,15 @@
 .flow > * + * {
     margin-top: var(--flow-space, 1em);
 }
+
+.page--inner .page__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page--inner .main {
+    flex: 1;
+    background-color: #ffffff;
+}
