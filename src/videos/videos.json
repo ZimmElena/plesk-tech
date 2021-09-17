@@ -1,7 +1,6 @@
 {
   "layout": "layouts/article.njk",
   "type": "inner",
-  "tags": [
-    "videos"
-  ]
+  "tags": "videos",
+  "permalink": "/videos/{{ title | slug }}/"
 }

@@ -6,6 +6,7 @@ pagination:
  data: collections.videos
  size: 6
  alias: videos
+ reverse: true
 permalink: "/videos/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
 
