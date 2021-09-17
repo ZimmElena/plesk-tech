@@ -31,10 +31,15 @@ h2 {
     line-height: 1.5;
 }
 
+h1.section__title,
 h2.section__title {
     position: relative;
+    color: #222222;
+    font-size: 3.11rem;
+    line-height: 1.5;
 }
 
+h1.section__title::after,
 h2.section__title::after {
     position: absolute;
     bottom: 0;
@@ -67,6 +72,18 @@ a {
 a:hover {
     color: #03ade4;
     text-decoration: underline;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 1em;
+    font-size: 0.77em;
+    white-space: nowrap;
+}
+
+.back-link > svg {
+    margin-right: 0.44em;
 }
 
 /* Lists */

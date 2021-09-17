@@ -1,0 +1,16 @@
+<nav class="paging">
+    <ul class="paging__list">
+        {%- for pageEntry in pagination.pages -%}
+            <li class="paging__item">
+                <a class="paging__link"
+                   href="{{ pagination.hrefs[loop.index0] }}"
+                   aria-label="Страница {{ loop.index }}"
+                    {% if page.url == pagination.hrefs[loop.index0] %}
+                    aria-current="page"
+                    {% endif %}>
+                    {{ loop.index }}
+                </a>
+            </li>
+        {%- endfor -%}
+    </ul>
+</nav>

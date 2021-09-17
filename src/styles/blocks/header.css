@@ -86,14 +86,14 @@
 }
 
 .links__item:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 .header__links .links__item--vacancies {
-    margin-right: 2em;
+    margin-right: 1.5em;
 }
 
-.links__item--vacancies .links__link {
+.links__link:not(.links__link--icon) {
     padding: 0 1rem;
     color: #000000;
     line-height: 1.7;
@@ -102,14 +102,14 @@
     border-radius: 16px;
 }
 
-.links__item--vacancies .links__link:hover,
-.links__item--vacancies .links__link:focus {
+.links__link:not(.links__link--icon):hover,
+.links__link:not(.links__link--icon):focus {
     color: #000000;
     background-color: #cbf0fd;
     border-color: #03ade4;
 }
 
-.links__item--vacancies .links__link:focus {
+.links__link:not(.links__link--icon):focus {
     outline: none;
 }
 
@@ -122,7 +122,7 @@
 }
 
 @media (min-width: 490px) {
-    .links__item--vacancies .links__link {
+    .links__link:not(.links__link--icon) {
         padding: 0 1.11rem;
         line-height: 2.29;
     }

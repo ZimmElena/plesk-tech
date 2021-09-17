@@ -1,0 +1,36 @@
+.paging {
+    margin: 2rem 0;
+}
+
+.paging__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.paging__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0.33rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background: #53bce6;
+    border-radius: 50%;
+}
+
+.paging__link:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #03ade4;
+}
+
+.paging__link[aria-current] {
+    background-color: #aaacc1;
+    pointer-events: none;
+}
