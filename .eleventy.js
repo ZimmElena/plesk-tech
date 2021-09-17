@@ -10,6 +10,18 @@ module.exports = function(config) {
         content.replace(/<img(?!.*loading)/g, '<img loading="lazy"');
     });
 
+    const slugify = require('slugify');
+
+    config.addFilter('slug', (input) => {
+        const options = {
+            replacement: '-',
+            remove: /[&,\/+()$~%.'":*?<>{}]/g,
+            strict: true,
+            lower: true
+        };
+        return slugify(input, options);
+    });
+
     // Даты
 
     config.addFilter('ruDate', (value) => {

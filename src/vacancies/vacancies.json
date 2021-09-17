@@ -1,5 +1,6 @@
 {
   "layout": "layouts/page.njk",
   "type": "inner",
-  "tags": "vacancies"
+  "tags": "vacancies",
+  "permalink": "/vacancies/{{ title | slug }}/"
 }
