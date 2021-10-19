@@ -24,9 +24,9 @@ const teams = [
     'Licensing &amp;&nbsp;Partner Services',
     'UI/UX Design',
     'Solus',
-    'Tools &amp;&nbsp;Infrastructure',
     'Technical writing &amp;&nbsp;Localization',
     'Program Managers',
+    'Support',
 ];
 
 const swiperTeams = new Swiper('.teams__swiper', {
