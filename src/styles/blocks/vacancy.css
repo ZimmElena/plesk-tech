@@ -1,5 +1,6 @@
 .vacancy__heading {
     padding: 0.77rem 0;
+    color: #ffffff;
     background-color: #009bec;
 }
 
@@ -11,8 +12,18 @@
 }
 
 .vacancy__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
     font-weight: 500;
     font-size: 1.77em;
+}
+
+.vacancy__salary {
+    font-size: 1.33rem;
+    opacity: 0.8;
 }
 
 .vacancy__button {

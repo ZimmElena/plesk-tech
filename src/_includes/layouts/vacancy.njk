@@ -1,0 +1,30 @@
+---
+layout: layouts/page.njk
+---
+
+<main class="main vacancy">
+    <section class="section vacancy__heading">
+        <div class="content">
+            <a class="vacancy__back-link" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="8" viewBox="0 0 20 8"><path d="M.2 3.73a.45.45 0 00-.15.33.42.42 0 00.15.33l3.45 3.27c.1.08.22.13.35.13.13 0 .26-.05.35-.13.1-.1.14-.21.14-.34A.46.46 0 004.35 7L1.7 4.6h17.8c.13 0 .26-.06.35-.15.1-.09.15-.2.15-.33a.46.46 0 00-.15-.34.52.52 0 00-.35-.13H1.7l2.65-2.51c.1-.09.14-.2.14-.33a.46.46 0 00-.14-.33A.51.51 0 004 .33a.51.51 0 00-.35.14L.2 3.73z"/></svg>
+                <span>Вернуться на <b>plesk.tech</b></span>
+            </a>
+            <h1 class="vacancy__title">
+                <span>{{ title }}</span>
+                {% if salary %}<small class="vacancy__salary">{{ salary }}</small>{% endif %}
+            </h1>
+            <button class="button vacancy__button" data-tf-popup="y29MiCC8" data-tf-size="80">Откликнуться</button>
+            {% if hhLink %}<a href="{{ hhLink }}" target="_blank" rel="noopener noreferrer">Посмотреть вакансию на&nbsp;hh.ru</a>{% endif %}
+        </div>
+    </section>
+
+    {{ content | safe }}
+
+    <section class="section vacancy__description">
+        <div class="content">
+            <button class="button vacancy__button" data-tf-popup="y29MiCC8" data-tf-size="80">Откликнуться</button>
+            {% if hhLink %}<a href="{{ hhLink }}" target="_blank" rel="noopener noreferrer">Посмотреть вакансию на&nbsp;hh.ru</a>{% endif %}
+        </div>
+    </section>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+</main>
