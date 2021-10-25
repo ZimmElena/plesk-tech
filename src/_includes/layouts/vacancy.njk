@@ -13,7 +13,12 @@ layout: layouts/page.njk
                 <span>{{ title }}</span>
                 {% if salary %}<small class="vacancy__salary">{{ salary }}</small>{% endif %}
             </h1>
-            <button class="button vacancy__button" data-tf-popup="y29MiCC8" data-tf-size="80">Откликнуться</button>
+
+            {% if feedback %}
+                <a class="button vacancy__button" href="{{ feedback }}" target="_blank" rel="noopener noreferrer">Откликнуться</a>
+            {% else %}
+                <button class="button vacancy__button" data-tf-popup="y29MiCC8" data-tf-size="80">Откликнуться</button>
+            {% endif %}
             {% if hhLink %}<a href="{{ hhLink }}" target="_blank" rel="noopener noreferrer">Посмотреть вакансию на&nbsp;hh.ru</a>{% endif %}
         </div>
     </section>
@@ -22,9 +27,16 @@ layout: layouts/page.njk
 
     <section class="section vacancy__description">
         <div class="content">
-            <button class="button vacancy__button" data-tf-popup="y29MiCC8" data-tf-size="80">Откликнуться</button>
+            {% if feedback %}
+                <a class="button vacancy__button" href="{{ feedback }}" target="_blank" rel="noopener noreferrer">Откликнуться</a>
+            {% else %}
+                <button class="button vacancy__button" data-tf-popup="y29MiCC8" data-tf-size="80">Откликнуться</button>
+            {% endif %}
             {% if hhLink %}<a href="{{ hhLink }}" target="_blank" rel="noopener noreferrer">Посмотреть вакансию на&nbsp;hh.ru</a>{% endif %}
         </div>
     </section>
-    <script src="//embed.typeform.com/next/embed.js"></script>
+    {% if not feedback %}
+        <script src="//embed.typeform.com/next/embed.js"></script>
+    {% endif %}
+
 </main>
