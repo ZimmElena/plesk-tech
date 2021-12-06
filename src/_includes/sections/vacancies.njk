@@ -3,8 +3,23 @@
         <div class="scroll-to" id="vacancies"></div>
         <div class="flow">
             <h3 class="section__title title">Вакансии</h3>
+            <h4>Вакансии Plesk</h4>
             <ul class="vacancies__list">
                 {%- for vacancy in collections.vacancies -%}
+                    <li class="vacancies__item"><a href="{{ vacancy.url }}">{{ vacancy.data.title }}</a></li>
+                {%- endfor -%}
+            </ul>
+
+            <h4>Вакансии Support Plesk</h4>
+            <ul class="vacancies__list">
+                {%- for vacancy in collections.support -%}
+                    <li class="vacancies__item"><a href="{{ vacancy.url }}">{{ vacancy.data.title }}</a></li>
+                {%- endfor -%}
+            </ul>
+
+            <h4>Вакансии Xovi/360 Cloud Platform</h4>
+            <ul class="vacancies__list">
+                {%- for vacancy in collections.other -%}
                     <li class="vacancies__item"><a href="{{ vacancy.url }}">{{ vacancy.data.title }}</a></li>
                 {%- endfor -%}
             </ul>
