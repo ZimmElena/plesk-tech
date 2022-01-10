@@ -21,16 +21,6 @@ jobs:
 
     - run: npm run build
 
-    - name: rsync deployment
-      uses: burnett01/rsync-deployments@4.1
-      with:
-        switches: -avzr --delete
-        path: dist/
-        remote_path: /var/www/vhosts/plesk.tech/httpdocs
-        remote_host: plesk.tech
-        remote_user: plesktech
-        remote_key: ${{ secrets.DEPLOY_KEY }}
-
     - name: gh-pages deployment
       uses: peaceiris/actions-gh-pages@v3
       with:
