@@ -4,7 +4,7 @@
 
 .videos__list {
     display: grid;
-    grid-gap: 1.77rem;
+    grid-gap: 2rem;
     padding: 0;
     list-style: none;
 }
@@ -22,9 +22,9 @@
 }
 
 .videos__video-date {
-    margin: 0.77rem 0 0.2rem;
+    margin: 0.8rem 0 0.3rem;
     color: #aaacc1;
-    font-size: 0.77rem;
+    font-size: 0.9rem;
 }
 
 .videos__video-title {
@@ -45,7 +45,7 @@
 }
 
 .videos__overview-title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.12rem + 1.66vw, 2rem);
 }
 
 .videos__overview-title > a,
@@ -61,7 +61,7 @@
 }
 
 .videos__video-timecode > li {
-    margin: 0.11rem 0;
+    margin: 0.3rem 0;
 }
 
 .videos__video-timecode a {

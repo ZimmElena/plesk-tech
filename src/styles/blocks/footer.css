@@ -1,17 +1,15 @@
-.footer--main {
+.footer {
     background-color: #2b2f39;
 }
 
 .footer__content {
-    padding-top: 1.11rem;
-    padding-bottom: 1.11rem;
+    padding-block: clamp(1.3rem, 0.77rem + 2.33vw, 2rem);
     color: #8e91ad;
     text-align: center;
 }
 
-.footer--inner {
-    flex: none;
-    background-color: #f8f9fd;
+.footer--inner .footer__content {
+    padding-block: 1.37rem;
 }
 
 .footer__links {
@@ -22,7 +20,7 @@
 }
 
 .footer__links > li + li {
-    margin-left: 1.11em;
+    margin-left: 1.1em;
 }
 
 .footer__links .icon {

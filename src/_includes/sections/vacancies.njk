@@ -1,28 +1,70 @@
 <section class="section section--vacancies">
-    <div class="content">
-        <div class="scroll-to" id="vacancies"></div>
-        <div class="flow">
-            <h3 class="section__title title">Вакансии</h3>
-            <h4>Вакансии Plesk</h4>
-            <ul class="vacancies__list">
-                {%- for vacancy in collections.vacancies -%}
-                    <li class="vacancies__item"><a href="{{ vacancy.url }}">{{ vacancy.data.title }}</a></li>
-                {%- endfor -%}
-            </ul>
+    <div class="content flow">
+        <h2 class="section__title title" id="vacancies">Вакансии</h2>
+        <div class="vacancies">
+            <div class="flow">
+                <h3>Вакансии Plesk</h3>
+                <ul class="vacancies__list">
+                    {%- for vacancy in collections.vacancies -%}
+                        <li class="vacancies__item">
+                            <a class="vacancies__name" href="{{ vacancy.url }}">{{ vacancy.data.title }}</a>
+                            {% if vacancy.data.salary %}
+                                <div class="vacancies__salary">{{ vacancy.data.salary }}</div>
+                            {% endif %}
+                        </li>
+                    {%- endfor -%}
+                </ul>
 
-            <h4>Вакансии Support Plesk</h4>
-            <ul class="vacancies__list">
-                {%- for vacancy in collections.support -%}
-                    <li class="vacancies__item"><a href="{{ vacancy.url }}">{{ vacancy.data.title }}</a></li>
-                {%- endfor -%}
-            </ul>
+                {%- if collections.support -%}
+                    <h3>Вакансии Support Plesk</h3>
+                    <ul class="vacancies__list">
+                        {%- for vacancy in collections.support -%}
+                            <li class="vacancies__item">
+                                <a class="vacancies__name" href="{{ vacancy.url }}">{{ vacancy.data.title }}</a>
+                                {% if vacancy.data.salary %}
+                                    <div class="vacancies__salary">{{ vacancy.data.salary }}</div>
+                                {% endif %}
+                            </li>
+                        {%- endfor -%}
+                    </ul>
+                {% endif %}
 
-            <h4>Вакансии Xovi/360 Cloud Platform</h4>
-            <ul class="vacancies__list">
-                {%- for vacancy in collections.other -%}
-                    <li class="vacancies__item"><a href="{{ vacancy.url }}">{{ vacancy.data.title }}</a></li>
-                {%- endfor -%}
-            </ul>
+                {%- if collections.other -%}
+                    <h3>Вакансии Xovi/360 Cloud Platform</h3>
+                    <ul class="vacancies__list">
+                        {%- for vacancy in collections.other -%}
+                            <li class="vacancies__item">
+                                <a class="vacancies__name" href="{{ vacancy.url }}">{{ vacancy.data.title }}</a>
+                                {% if vacancy.data.salary %}
+                                    <div class="vacancies__salary">{{ vacancy.data.salary }}</div>
+                                {% endif %}
+                            </li>
+                        {%- endfor -%}
+                    </ul>
+                {% endif %}
+            </div>
+
+            <div class="benefits flow">
+                <h3>Что вам понравится</h3>
+                <div class="benefits__item benefits__item--health">
+                    <h4 class="benefits__title title">Забота о&nbsp;вашем здоровье</h4>
+                    <ul class="list">
+                        <li>Расширенная программа ДМС</li>
+                        <li>Персональный доктор в&nbsp;офисе</li>
+                        <li>Специальные программы страхования членов семей сотрудников</li>
+                    </ul>
+                </div>
+                <div class="benefits__item benefits__item--lifestyle">
+                    <h4 class="benefits__title title">Спорт и&nbsp;отдых</h4>
+                    <ul class="list">
+                        <li>Программа компенсаций любых занятий спортом</li>
+                        <li>Корпоративный бассейн</li>
+                        <li>Корпоративный футбол</li>
+                        <li>Специальные скидки для Plesk по&nbsp;программе здоровья</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

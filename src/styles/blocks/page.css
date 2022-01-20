@@ -8,29 +8,30 @@
 .page {
     color: #464646;
     font-weight: 400;
-    font-size: clamp(14px, 3vw, 18px);
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
-    background-color: #f8f9fd;
+    background-color: #ffffff;
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: #00000000;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .page__body {
     margin: 0;
+    font-size: clamp(0.87rem, 0.68rem + 0.83vw, 1.12rem);
     line-height: 1.6;
 }
 
-.flow > * + * {
-    margin-top: var(--flow-space, 1em);
-}
-
-.page--inner .page__wrapper {
+.page__wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
 }
 
-.page--inner .main {
+.main {
     flex: 1;
-    background-color: #ffffff;
 }
