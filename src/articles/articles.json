@@ -1,0 +1,5 @@
+{
+  "type": "inner",
+  "tags": "articles",
+  "permalink": "/articles/{{ title | slug }}/"
+}

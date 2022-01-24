@@ -1,5 +1,5 @@
 {
-  "layout": "layouts/article.njk",
+  "layout": "layouts/video.njk",
   "type": "inner",
   "tags": "videos",
   "permalink": "/videos/{{ title | slug }}/"

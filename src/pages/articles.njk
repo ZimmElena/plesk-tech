@@ -1,0 +1,65 @@
+---
+title: Статьи
+layout: layouts/page.njk
+type: inner
+pagination:
+ data: collections.articles
+ size: 5
+ alias: articles
+ reverse: true
+permalink: "/articles/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+
+<main class="main">
+    <section class="section section--article">
+        <div class="content">
+            <a class="back-link" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="8" viewBox="0 0 20 8"><path d="M.2 3.73a.45.45 0 00-.15.33.42.42 0 00.15.33l3.45 3.27c.1.08.22.13.35.13.13 0 .26-.05.35-.13.1-.1.14-.21.14-.34A.46.46 0 004.35 7L1.7 4.6h17.8c.13 0 .26-.06.35-.15.1-.09.15-.2.15-.33a.46.46 0 00-.15-.34.52.52 0 00-.35-.13H1.7l2.65-2.51c.1-.09.14-.2.14-.33a.46.46 0 00-.14-.33A.51.51 0 004 .33a.51.51 0 00-.35.14L.2 3.73z"/></svg>
+                <span>Вернуться на <b>plesk.tech</b></span>
+            </a>
+
+            <div class="articles flow">
+                <h1 class="section__title title">{{ title }}</h1>
+                <div class="articles__list">
+                    {%- for article in articles -%}
+                        <article class="article">
+                            <time class="article__date" datetime="{{ article.data.date.toISOString() }}" >
+                                {{ article.data.date.toLocaleDateString('ru-RU') }}
+                            </time>
+                            <h2 class="article__title">
+                                <a
+                                    class="article__title-link"
+                                    href="https://habr.com/ru/company/plesk/blog/{{ article.data.id }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {{ article.data.title }}
+                                </a>
+                            </h2>
+                            <div class="article__body">
+                                <div class="article__cover">
+                                    <img class="article__cover-image" src="{{ article.data.image }}" alt ="" />
+                                </div>
+                                <div class="article__text">
+                                    {{ article.templateContent | safe }}
+
+                                    <a
+                                        class="article__link"
+                                        href="https://habr.com/ru/company/plesk/blog/{{ article.data.id }}"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <span>Читать далее на&nbsp;Хабре</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="article__link-arrow" width="24" height="24" viewBox="0 0 32 32"><path d="M21.188 9.281L19.78 10.72L24.063 15H4v2h20.063l-4.282 4.281l1.407 1.438L27.905 16z" fill="currentColor"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    {%- endfor -%}
+                </div>
+
+                {% include 'partials/paging.njk' %}
+            </div>
+        </div>
+    </section>
+</main>
