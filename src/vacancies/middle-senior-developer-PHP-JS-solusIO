@@ -1,0 +1,67 @@
+---
+date: 2021-01-05
+title: Middle/Senior Developer PHP/JS (SolusIO) 
+salary: от 150 000 до 300 000 руб. на руки
+hhLink: https://novosibirsk.hh.ru/vacancy/50009083
+---
+
+<section class="section vacancy__intro">
+    <div class="content">
+        <div class="vacancy__item flow">
+            <h3 class="title">Продукт</h3>
+            <p>Мы&nbsp;делаем SolusIO&nbsp;&mdash; это коробочное решение которое позволяет создавать публичное облако виртуальных машин.</p>
+            <p>Мы&nbsp;используем React на&nbsp;фронте, Laravel для бекенда бизнес-логики и&nbsp;Go для работы с&nbsp;системным&nbsp;ПО и&nbsp;подсистемами ОС&nbsp;Linux.</p>
+        </div>
+        <div class="vacancy__item flow">
+            <h3 class="title">Команда:</h3>
+            <p>Для команды, в&nbsp;которой вы&nbsp;будете работать, это означает создать новый продукт на&nbsp;современный стеке и&nbsp;с&nbsp;актуальными подходами в&nbsp;разработке, тестировании и&nbsp;доставке.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+           <h3 class="title">Задачи:</h3>
+           <ul class="list">
+            <li>Разработка frontend&rsquo;a на&nbsp;ReactJS</li>
+            <li>Разработка backend&rsquo;a на&nbsp;Laravel и&nbsp;Go</li>
+            <li>Ручного тестирование собственного кода</li>
+            <li>Создание unit, компонентных и&nbsp;e2e тестов</li>
+            <li>Демонстрация работы stackeholder'ам</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+            <h3 class="title">Чего ждём от&nbsp;вас:</h3>
+            <ul class="list">
+            <li>Не&nbsp;менее одного года опыта работы в&nbsp;сфере веб-разработки и/или смежных областях</li>
+            <li>Понимание принципов построения современных веб-приложений</li>
+            <li>Знание минимум одного фреймворка (Laravel, Symfony, Yii, ReactJS)</li>
+            <li>Опыт работы с&nbsp;СУБД</li>
+            <li>Опыт командной работы (Git, code review, issue tracker)</li>
+            <li>Знание английского на&nbsp;уровне чтения и&nbsp;написания технической документации</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+            <h3 class="title">Что вам понравится:</h3>
+            <ul class="list">
+                <li>Работа в&nbsp;небольшой команде над новым проектом</li>
+                <li>Все мы&nbsp;профи своего дела и&nbsp;любим его</li>
+                <li>Обучение, повышение квалификации и&nbsp;обмен опытом на&nbsp;конференциях, митапах, tech- и&nbsp;biz talks</li>
+                <li>Расширенная ДМС в&nbsp;регионе и&nbsp;корпоративный врач</li>
+                <li>Конкурентная заработная плата</li>
+                <li>Совершенствовать разговорный английский с&nbsp;лучшими преподавателями</li>
+            </ul>
+        </div>
+    </div>
+</section>
