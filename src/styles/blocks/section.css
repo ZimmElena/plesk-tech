@@ -140,6 +140,7 @@
 @media (min-width: 960px) {
     .vacancies {
         display: flex;
+        justify-content: space-between;
         align-items: flex-start;
         gap: 2rem;
     }
