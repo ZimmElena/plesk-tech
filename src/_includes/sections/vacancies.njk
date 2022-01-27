@@ -5,7 +5,7 @@
             <div class="flow">
                 <h3>Вакансии Plesk</h3>
                 <ul class="vacancies__list">
-                    {%- for vacancy in collections.vacancies -%}
+                    {%- for vacancy in collections.plesk -%}
                         <li class="vacancies__item">
                             <a class="vacancies__name" href="{{ vacancy.url }}">{{ vacancy.data.title }}</a>
                             {% if vacancy.data.salary %}

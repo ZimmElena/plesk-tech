@@ -96,13 +96,13 @@ a:hover {
 .back-link {
     display: inline-flex;
     align-items: center;
-    margin: 0 0 1em;
-    font-size: 0.77em;
+    margin: 0 0 1rem;
+    font-size: 0.9em;
     white-space: nowrap;
 }
 
 .back-link > svg {
-    margin-right: 0.44em;
+    margin-right: 0.5em;
 }
 
 /* Lists */

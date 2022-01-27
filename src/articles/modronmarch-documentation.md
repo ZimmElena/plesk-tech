@@ -3,6 +3,8 @@ id: "562960"
 date: 2021-06-16
 title: "Как писать хорошую документацию"
 image: "https://habrastorage.org/getpro/habr/upload_files/12a/49b/8c2/12a49b8c2a0cbe1aab48f8506453146c.png"
+tags:
+- Техническая документация
 ---
 
 Несколько лет назад я&nbsp;услышал от&nbsp;одного коллеги историю. Он&nbsp;в&nbsp;то&nbsp;время работал начальником

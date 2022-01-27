@@ -3,7 +3,9 @@ id: "582218"
 date: 2021-10-08
 title: "Список современных книг для Engineering Manager’а"
 image: "https://habrastorage.org/getpro/habr/upload_files/699/5fd/476/6995fd4761095ede1f3711a1858dc437.jpg"
-imagePosition: ""
+tags:
+ - Управление разработкой
+ - Карьера в IT
 ---
 
 В&nbsp;данном посте мне хотелось&nbsp;бы поделиться списком книг, которые (по&nbsp;крайне субъективному мнению)

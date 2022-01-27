@@ -3,11 +3,10 @@ title: Видео
 layout: layouts/page.njk
 type: inner
 pagination:
- data: collections.videos
- size: 6
- alias: videos
- reverse: true
-permalink: "/videos/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+ data: collections.videoTags
+ size: 1
+ alias: tag
+permalink: "/videos/tags/{{ tag | slug }}/"
 ---
 
 <main class="main">
@@ -19,16 +18,18 @@ permalink: "/videos/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNum
             </a>
 
             <div class="videos flow">
-                <h1 class="section__title title">{{ title }}</h1>
+
+                <h1 class="section__title title">{{ tag }}</h1>
 
                 <div class="tags-nav">
                     {% for tag in collections.videoTags %}
-                        <a href="/videos/tags/{{ tag | slug }}" class="tags-nav__tag">{{tag}}</a>
+                        <a href="/videos/tags/{{tag | slug}}" class="tags-nav__tag">{{tag}}</a>
                     {% endfor %}
                 </div>
 
                 <ul class="videos__list">
-                    {%- for video in videos -%}
+                    {% set videoslist = collections.videos | inCategory(tag) %}
+                    {% for video in videoslist | reverse %}
                         <li class="videos__item">
                             <div class="video">
                                 <a class="video__link" href="https://youtu.be/{{ video.data.id }}">
@@ -44,7 +45,7 @@ permalink: "/videos/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNum
                             <div class="videos__video-date">{{ video.data.date.toLocaleDateString('ru-RU') }}</div>
                             <a class="videos__video-title" href="{{ video.url }}">{{ video.data.title }}</a>
                             {% if video.data.tags %}
-                                <div class="video__tags tags">
+                                <div class="videos__tags tags">
                                     {% for tag in video.data.tags %}
                                         {%- if tag != "videos" -%}
                                             {% set tagUrl %}/videos/tags/{{ tag | slug }}/{% endset %}
@@ -57,7 +58,13 @@ permalink: "/videos/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNum
                     {%- endfor -%}
                 </ul>
 
-                {% include 'partials/paging.njk' %}
+                <p>
+                    <a class="back-link" href="{{ '/videos/' | url }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="8" viewBox="0 0 20 8"><path d="M.2 3.73a.45.45 0 00-.15.33.42.42 0 00.15.33l3.45 3.27c.1.08.22.13.35.13.13 0 .26-.05.35-.13.1-.1.14-.21.14-.34A.46.46 0 004.35 7L1.7 4.6h17.8c.13 0 .26-.06.35-.15.1-.09.15-.2.15-.33a.46.46 0 00-.15-.34.52.52 0 00-.35-.13H1.7l2.65-2.51c.1-.09.14-.2.14-.33a.46.46 0 00-.14-.33A.51.51 0 004 .33a.51.51 0 00-.35.14L.2 3.73z"/></svg>
+                        <span>Все видео</span>
+                    </a>
+                </p>
+
             </div>
         </div>
     </section>

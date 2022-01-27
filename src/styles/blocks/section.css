@@ -300,8 +300,7 @@
     }
 }
 
-/* Article */
-
-.section--article {
+.section--article,
+.section--videos {
     padding: 0.8rem 0;
 }

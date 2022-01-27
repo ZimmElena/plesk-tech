@@ -3,6 +3,8 @@ id: "566110"
 date: 2021-07-05
 title: "О самопроверке IT-переводчика и блоках качества"
 image: "https://habrastorage.org/webt/ve/dd/pg/veddpgvwzrp9jok9j-culywms9g.png"
+tags:
+ - Локализация
 ---
 
 Эта статья написана по&nbsp;следам онлайн-курса <a href="https://www.coursera.org/learn/management-translation-quality/home/welcome?utm_medium=email&amp;utm_source=other&amp;utm_campaign=opencourse.welcome.management-translation-quality.~opencourse.welcome.XJTlzwB_EeqTyBJ8MlZJWQ." target="_blank" rel="noopener noreferrer">Translation Quality Management</a> от&nbsp;ТГУ

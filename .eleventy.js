@@ -6,7 +6,7 @@ module.exports = function(config) {
     config.addPassthroughCopy('src/scripts');
     config.addPassthroughCopy('src/**/*.(html|gif|jpg|png|svg|mp4|webm|zip)');
 
-    config.setDataDeepMerge(false);
+    config.setDataDeepMerge(true);
 
      config.addFilter('addLoadingLazy', (content) => {
         content.replace(/<img(?!.*loading)/g, '<img loading="lazy"');
@@ -43,6 +43,35 @@ module.exports = function(config) {
 
     config.addFilter('isoDate', (value) => {
         return value.toISOString();
+    });
+
+    config.addCollection("videoTags", (collections) => {
+        const tagsSet = new Set()
+        collections.getFilteredByGlob("**/videos/*.md").forEach((item) => {
+            if (!item.data.tags) return
+            item.data.tags
+                .filter((tag) => !['videos'].includes(tag))
+                .forEach((tag) => tagsSet.add(tag))
+        })
+        return [...tagsSet].sort((a, b) => a.localeCompare(b))
+    });
+
+    config.addCollection("articleTags", (collections) => {
+        const tagsSet = new Set()
+        collections.getFilteredByGlob("**/articles/*.md").forEach((item) => {
+            if (!item.data.tags) return
+            item.data.tags
+                .filter((tag) => !['articles'].includes(tag))
+                .forEach((tag) => tagsSet.add(tag))
+        })
+        return [...tagsSet].sort((a, b) => a.localeCompare(b))
+    });
+
+    config.addFilter('inCategory', (collection, category) => {
+        if (!category) {
+            return collection;
+        }
+        return collection.filter((item) => item.data.tags.includes(category));
     });
 
     // Трансформации
