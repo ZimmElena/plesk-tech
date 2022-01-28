@@ -43,8 +43,7 @@
     transition: linear 0.2s;
 }
 
-.teams__item:hover,
-.teams__item:focus {
+.teams__item:not(.teams__item--active):is(:hover, :focus) {
     background-color: #cbf0fd;
     border-color: #03ade4;
 }
@@ -54,7 +53,13 @@
 }
 
 .teams__item--active {
+    color: #ffffff;
     background-color: #53bce6;
+}
+
+.teams__item--active:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbf0fd;
 }
 
 .teams__item--active,
