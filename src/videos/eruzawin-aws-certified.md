@@ -4,5 +4,4 @@ title: "Женя Рузавин про сертификацию AWS Certified Cl
 date: 2021-06-16
 tags:
  - Plesk
- - AWS
 ---
