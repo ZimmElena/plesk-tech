@@ -28,6 +28,7 @@
 .section--speakers .section__media img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    object-position: bottom;
 }
 
 .section--traditions .section__media {
