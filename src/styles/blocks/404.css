@@ -1,0 +1,9 @@
+.not-found {
+    text-align: center;
+}
+
+.not-found__title {
+    color: #8e91ad;
+    font-weight: 600;
+    font-size: clamp(3rem, -2.25rem + 23.33vw, 10rem);
+}
