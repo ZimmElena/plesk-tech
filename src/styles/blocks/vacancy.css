@@ -1,6 +1,6 @@
 .vacancy__heading {
     padding: 0.8rem 0;
-    color: #ffffff;
+    color: #fff;
     background-color: #009bec;
 }
 
@@ -23,10 +23,10 @@
     display: inline-block;
     margin: 0 1.8rem 1rem 0;
     padding: 0.5rem 1.8rem;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-size: clamp(1rem, 0.77rem + 1vw, 1.3rem);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     line-height: 1.22;
     text-align: center;
     text-decoration: none;
@@ -38,7 +38,7 @@
 }
 
 .vacancy__button:hover {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     background-color: #15a9f6;
 }
@@ -50,9 +50,9 @@
 }
 
 .vacancy__heading .button {
-    margin-top: 1em;
+    margin-block-start: 1em;
     color: #414e5a;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .vacancy__heading .button:hover {
@@ -65,7 +65,7 @@
 }
 
 .vacancy__heading a:hover {
-    color: #ffffff;
+    color: #fff;
 }
 
 .vacancy__back-link {
@@ -77,7 +77,7 @@
 }
 
 .vacancy__back-link > svg {
-    margin-right: 0.5em;
+    margin-inline-end: 0.5em;
 }
 
 .vacancy__intro .content {
@@ -94,9 +94,9 @@
 
 .vacancy__item > .title::before {
     flex: none;
-    content: '';
-    width: 48px;
-    height: 48px;
+    content: "";
+    inline-size: 48px;
+    block-size: 48px;
     background: 50% 50% no-repeat;
     background-size: contain;
 }
@@ -134,7 +134,7 @@
 
     .vacancy__intro .title::before {
         order: 1;
-        width: 96px;
-        height: 96px;
+        inline-size: 96px;
+        block-size: 96px;
     }
 }

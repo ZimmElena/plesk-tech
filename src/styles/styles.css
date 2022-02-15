@@ -1,28 +1,28 @@
 /* Fonts */
 
-@import 'fonts.css';
+@import "fonts.css";
 
 /* Vendor */
 
-@import 'vendor/swiper-bundle.min.css';
+@import "vendor/swiper-bundle.min.css";
 
 /* Blocks */
 
-@import 'blocks/reset.css';
-@import 'blocks/visually-hidden.css';
-@import 'blocks/page.css';
-@import 'blocks/content.css';
-@import 'blocks/header.css';
-@import 'blocks/hero.css';
-@import 'blocks/section.css';
-@import 'blocks/vacancy.css';
-@import 'blocks/statistics.css';
-@import 'blocks/video.css';
-@import 'blocks/videos.css';
-@import 'blocks/articles.css';
-@import 'blocks/tags.css';
-@import 'blocks/paging.css';
-@import 'blocks/slider.css';
-@import 'blocks/footer.css';
-@import 'blocks/scroll-up.css';
-@import 'blocks/404.css';
+@import "blocks/reset.css";
+@import "blocks/visually-hidden.css";
+@import "blocks/page.css";
+@import "blocks/content.css";
+@import "blocks/header.css";
+@import "blocks/hero.css";
+@import "blocks/section.css";
+@import "blocks/vacancy.css";
+@import "blocks/statistics.css";
+@import "blocks/video.css";
+@import "blocks/videos.css";
+@import "blocks/articles.css";
+@import "blocks/tags.css";
+@import "blocks/paging.css";
+@import "blocks/slider.css";
+@import "blocks/footer.css";
+@import "blocks/scroll-up.css";
+@import "blocks/404.css";

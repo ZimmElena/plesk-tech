@@ -23,8 +23,8 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
     list-style: none;
 }
 
@@ -37,7 +37,7 @@ html:focus-within {
 /* Set core body defaults */
 
 body {
-    min-height: 100vh;
+    min-block-size: 100vh;
     text-rendering: optimizespeed;
     line-height: 1.5;
 }
@@ -53,7 +53,7 @@ a:not([class]) {
 img,
 picture {
     display: block;
-    max-width: 100%;
+    max-inline-size: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -71,7 +71,7 @@ select {
     html:focus-within {
         scroll-behavior: auto;
     }
-
+    /* stylelint-disable declaration-no-important */
     *,
     *::before,
     *::after {
@@ -80,4 +80,5 @@ select {
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
     }
+    /* stylelint-enable declaration-no-important */
 }

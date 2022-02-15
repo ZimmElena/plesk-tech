@@ -2,14 +2,13 @@
 
 .content {
     position: relative;
-    max-width: 1272px;
+    max-inline-size: 1272px;
     margin: 0 auto;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-inline: 5%;
 }
 
 .flow > * + * {
-    margin-top: var(--flow-space, 1em);
+    margin-block-start: var(--flow-space, 1em);
 }
 
 @media (min-width: 769px) {
@@ -19,14 +18,17 @@
 }
 
 img {
-    height: auto;
+    block-size: auto;
 }
 
 /* Headings */
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 
 h1 {
@@ -35,7 +37,7 @@ h1 {
 }
 
 h2 {
-    color: #222222;
+    color: #222;
     font-size: clamp(2rem, 1.25rem + 3.33vw, 3rem);
     line-height: 1.5;
 }
@@ -43,7 +45,7 @@ h2 {
 h1.section__title,
 h2.section__title {
     position: relative;
-    color: #222222;
+    color: #222;
     font-size: clamp(2rem, 1.25rem + 3.33vw, 3rem);
     line-height: 1.5;
 }
@@ -51,19 +53,19 @@ h2.section__title {
 h1.section__title::after,
 h2.section__title::after {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 2rem;
-    height: 4px;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inline-size: 2rem;
+    block-size: 4px;
     background-color: #53bce7;
-    content: '';
+    content: "";
 }
 
 @media (min-width: 768px) {
     h1.section__title::after,
     h2.section__title::after {
-        width: 2.44rem;
-        height: 6px;
+        inline-size: 2.44rem;
+        block-size: 6px;
     }
 }
 
@@ -101,7 +103,7 @@ a:hover {
 }
 
 .back-link > svg {
-    margin-right: 0.5em;
+    margin-inline-end: 0.5em;
 }
 
 .more-link {
@@ -113,7 +115,7 @@ a:hover {
 /* Lists */
 
 .list {
-    padding-left: 0;
+    padding-inline-start: 0;
     list-style: none;
 }
 
@@ -124,11 +126,11 @@ a:hover {
 /* Unordered Lists */
 
 .list > li {
-    padding-left: 22px;
+    padding-inline-start: 22px;
 }
 
 .list > .list__title {
-    padding-left: 0;
+    padding-inline-start: 0;
 }
 
 .list > .list__title::before {
@@ -137,17 +139,16 @@ a:hover {
 
 @media (min-width: 768px) {
     .list > li {
-        padding-left: 30px;
+        padding-inline-start: 30px;
     }
 }
 
 .list > li::before {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    inset-block: 0;
+    inset-inline-start: 0;
     font-stretch: expanded;
-    content: '—';
+    content: "—";
 }
 
 /* Ordered Lists */
@@ -158,8 +159,8 @@ ol.list {
 
 ol.list > li::before {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset-block-start: 0;
+    inset-inline-start: 0;
     font-stretch: expanded;
     counter-increment: list;
     content: counter(list);
@@ -167,8 +168,8 @@ ol.list > li::before {
 
 .icon {
     display: block;
-    width: 32px;
-    height: 32px;
+    inline-size: 32px;
+    block-size: 32px;
     overflow: hidden;
     fill: currentcolor;
 }

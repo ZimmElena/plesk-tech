@@ -12,23 +12,23 @@
 }
 
 .hero h1 {
-    margin-bottom: 1rem;
-    color: #ffffff;
+    margin-block-end: 1rem;
+    color: #fff;
     font-size: clamp(2rem, 1.41rem + 2vw, 3.5rem);
 }
 
 .hero__about {
     position: relative;
-    color: #ffffff;
+    color: #fff;
     font-weight: 600;
     font-size: clamp(1rem, 0.62rem + 1.66vw, 1.5rem);
 }
 
 .hero__arrow {
     position: absolute;
-    width: auto;
-    height: 2rem;
-    margin-left: 1rem;
+    inline-size: auto;
+    block-size: 2rem;
+    margin-inline-start: 1rem;
     transform: scaleY(-1) rotate(-19deg);
 }
 
@@ -54,13 +54,13 @@
     }
 
     .hero__about {
-        text-align: right;
+        text-align: end;
     }
 
     .hero__arrow {
-        top: 1em;
-        right: -2rem;
-        height: 2rem;
+        inset-block-start: 1em;
+        inset-inline-end: -2rem;
+        block-size: 2rem;
         transform: rotate(-10deg);
     }
 }
@@ -77,9 +77,9 @@
 
 @media (min-width: 1070px) {
     .hero__arrow {
-        top: 1.6em;
-        right: -2rem;
-        height: 3rem;
+        inset-block-start: 1.6em;
+        inset-inline-end: -2rem;
+        block-size: 3rem;
         transform: rotate(2deg);
     }
 }

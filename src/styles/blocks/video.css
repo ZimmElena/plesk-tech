@@ -1,25 +1,25 @@
 .video {
     position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    background-color: #000000;
+    inline-size: 100%;
+    block-size: 0;
+    padding-block-end: 56.25%;
+    background-color: #000;
 }
 
 .video__link {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
 }
 
 .video .video__media {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
     margin: 0;
     border: none;
     object-fit: cover;
@@ -27,12 +27,12 @@
 
 .video__button {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
     z-index: 1;
     display: none;
-    width: 68px;
-    height: 48px;
+    inline-size: 68px;
+    block-size: 48px;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -46,7 +46,7 @@
 }
 
 .video__button-icon {
-    fill: #ffffff;
+    fill: #fff;
 }
 
 .video__button:focus {
@@ -55,7 +55,7 @@
 
 .video:hover .video__button-shape,
 .video__button:focus .video__button-shape {
-    fill: #ff0000;
+    fill: #f00;
     fill-opacity: 1;
 }
 

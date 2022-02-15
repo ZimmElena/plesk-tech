@@ -20,12 +20,12 @@
 }
 
 .footer__links > li + li {
-    margin-left: 1.1em;
+    margin-inline-start: 1.1em;
 }
 
 .footer__links .icon {
-    width: 24px;
-    height: 24px;
+    inline-size: 24px;
+    block-size: 24px;
 }
 
 .footer__link {
@@ -40,6 +40,6 @@
     }
 
     .footer__links {
-        margin-top: 0;
+        margin-block-start: 0;
     }
 }
