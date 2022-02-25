@@ -1,0 +1,117 @@
+---
+date: 2021-01-03
+title: Senior Java developer
+salary: 200 000 — 300 000 руб.
+hhLink: https://novosibirsk.hh.ru/vacancy/52610160
+tags: plesk
+---
+
+<section class="section vacancy__intro">
+    <div class="content">
+        <div class="vacancy__item flow">
+            <h3 class="title">Продукт</h3>
+            <p>Разрабатываем Plesk: панель управления серверами и&nbsp;веб-приложениями, продаваемую в&nbsp;140 странах мира.</p>
+            <p>Не&nbsp;слышали о&nbsp;нас? Нужно срочно это исправить, так как&nbsp;6% веб-сайтов в&nbsp;Интернете хостятся на&nbsp;Plesk.</p>
+            <p>Наш R&amp;D работает в&nbsp;Новосибирске, Академгородке и&nbsp;Кёльне. Пишем на&nbsp;PHP, JS, C++, Go, Python и&nbsp;Java.</p>
+            <p>Сотрудничаем с&nbsp;Amazon Web Services, Google Cloud, Alibaba Cloud, Microsoft Azure и&nbsp;другими компаниями, входящими в&nbsp;Top 100 хостинговой индустрии.</p>
+        </div>
+        <div class="vacancy__item flow">
+            <h3 class="title">Команда</h3>
+            <p>Key Administrator&nbsp;&mdash; это команда в&nbsp;самом сердце бизнеса. Мы&nbsp;создаем систему лицензирования, работающую под высокими нагрузками. Мы&nbsp;обрабатываем телеметрию от&nbsp;серверов и&nbsp;ловим за&nbsp;руку пиратов. А&nbsp;еще мы&nbsp;даем бизнесу данные и&nbsp;аналитику для генерации новых идей и&nbsp;принятия стратегических решений.</p>
+            <p>В&nbsp;работе нам чужд подход &laquo;бери больше&nbsp;&mdash; кидай дальше&raquo;. Мы&nbsp;уже знаем, как совместить активное бизнес-развитие с&nbsp;истреблением технического долга. Работаем не&nbsp;срезая углы и&nbsp;без перегруза.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+            <h3 class="title">За технологии</h3>
+            <ul class="list">
+                <li>У&nbsp;нас монолит + микросервисы. От&nbsp;монолита отпиливаем там, где есть профит в&nbsp;отказоустойчивости или перформансе&nbsp;&mdash; это важные для нас темы.</li>
+                <li>Backend пишем на&nbsp;Java&nbsp;11 (JAX RS, Spring, Hibernate) и&nbsp;Kotlin.</li>
+                <li>Фронтенда два. Есть JavaScript+Dojo, который дожидается пенсии. Есть TypeScript+React, который активно развиваем.</li>
+                <li>Хостинг и&nbsp;инструментарий: Linux, Docker, Jenkins, Selenium, Ansible, Prometheus, Graylog, Zipkin, Grafana.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+            <h3 class="title">Чем предстоит заниматься?</h3>
+            <ul class="list">
+                <li>Работать в&nbsp;тесном контакте с&nbsp;QA с&nbsp;самого начала работы над задачей&nbsp;&mdash; мы&nbsp;используем подход shift left testing и&nbsp;он&nbsp;великолепен</li>
+                <li>Писать код&nbsp;&mdash; конечно, code-review</li>
+                <li>Работать в&nbsp;тесном контакте с&nbsp;QA с&nbsp;самого начала работы над задачей&nbsp;&mdash; мы&nbsp;используем подход shift left testing и&nbsp;он&nbsp;великолепен</li>
+                <li>Вместе проектировать архитектуру&nbsp;&mdash; обсуждая с&nbsp;командой, ибо все мы&nbsp;будем сопровождать твоё архитектурное решение</li>
+                <li>Общаться&nbsp;&mdash; один из&nbsp;наших основных инструментов&nbsp;&mdash; это коммуникации</li>
+                <li>Документировать&nbsp;&mdash; и&nbsp;обновлять существующую документацию так, чтобы нужную информацию было легко найти и&nbsp;читать</li>
+                <li>Принимать решения&nbsp;&mdash; это значит иметь полномочия и&nbsp;нести ответственность за&nbsp;своё решение</li>
+                <li>Исследовать&nbsp;&mdash; и&nbsp;это относится как к&nbsp;фичам: &laquo;Есть&nbsp;ли техническая возможность?&raquo;, так и&nbsp;к&nbsp;технической части проекта, которую мы&nbsp;активно развиваем</li>
+                </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+            <h3 class="title">Что есть кроме повседневных задач?</h3>
+            <ul class="list">
+                <li>Research Days&nbsp;&mdash; каждые две недели команда берет 1&nbsp;рабочий день на&nbsp;то, чтобы поэкспериментировать с&nbsp;новыми технологиями, написать статью на&nbsp;Хабр или создать интересный прототип. Ты&nbsp;сам выбираешь что тебе интересно и&nbsp;делишься результатом с&nbsp;командой</li>
+                <li>Рассказывать&nbsp;&mdash; можно выступить с&nbsp;докладом перед командой, компанией, или на&nbsp;конференции. Или написать статью. Компания активно помогает с&nbsp;публикацией материала и&nbsp;с&nbsp;организацией выступлений</li>
+                <li>Участвовать в&nbsp;гильдии&nbsp;&mdash; в&nbsp;Plesk их&nbsp;много, например, гильдия backend разработчиков</li>
+                <li>Участвовать в&nbsp;жизни Plesk&nbsp;&mdash; у&nbsp;нас постоянно появляются кружки по&nbsp;интересам. Кто-то ездит на&nbsp;рыбалку, кто-то играет в&nbsp;Counter-Strike или катается на&nbsp;сноуборде.</li>
+                <li>У&nbsp;нас есть даже музыкальный коллектив со&nbsp;своим youtube каналом</li>
+                <li>Учить английский&nbsp;&mdash; мы&nbsp;делаем это не&nbsp;потому что модно, а&nbsp;потому что он&nbsp;реально используется в&nbsp;повседневной работе. Мы&nbsp;ведем документацию на&nbsp;английском и&nbsp;общаемся с&nbsp;коллегами из&nbsp;других стран.</li>
+                </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+            <h3 class="title">А&nbsp;какие есть примеры повседневных задач?</h3>
+            <ul class="list">
+                <li>Реализовать новую модель лицензирования&nbsp;&mdash; сколько лимитов выставил, за&nbsp;столько и&nbsp;платишь</li>
+                <li>Переписать старый сервис с&nbsp;python на&nbsp;java</li>
+                <li>Спроектировать новую схему интеграции с&nbsp;внутренним сервисом Plesk</li>
+                <li>Реализовать синхронизацию данных в&nbsp;разнородных системах</li>
+                </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+            <h3 class="title">Что мы&nbsp;от&nbsp;тебя ожидаем?</h3>
+            <ul class="list">
+                <li>Опыт в&nbsp;разработке Web сервисов на&nbsp;Java от&nbsp;трёх лет</li>
+                <li>Знание SQL. У&nbsp;нас Postgres, но&nbsp;не&nbsp;обязательно знать именно его</li>
+                <li>Опыт в&nbsp;написании unit-тестов</li>
+                <li>Привычка писать чистый код и&nbsp;следовать правилу бойскаута</li>
+                <li>Не&nbsp;надо спрашивать на&nbsp;это разрешение у&nbsp;менеджера, просто делай это.</li>
+                <li>Привычку общаться, давать другим и&nbsp;принимать обратную связь</li>
+                <li>Желание учиться. Если ты&nbsp;не&nbsp;знаешь Linux, или Python, это не&nbsp;проблема&nbsp;&mdash; мы&nbsp;поможем разобраться</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+  <section class="section vacancy__description">
+    <div class="content">
+        <div class="flow">
+            <h3 class="title">А&nbsp;тебе это зачем?</h3>
+            <ul class="list">
+                <li>Если ты&nbsp;хочешь выступить с&nbsp;докладом, изучить новую технологию или сделать MVP интересной идеи&nbsp;&mdash; команда тебя всегда поддержит. А&nbsp;компания поможет и&nbsp;организационно, и&nbsp;финансово: оплатим обучение, участие в&nbsp;конференции, дизайнеры помогут сверстать статью или задизайнить слайды для конференции и&nbsp;т.д.</li>
+                <li>Ты&nbsp;всегда можешь рассчитывать на&nbsp;бОльшую зарплату, взяв под ответственность более сложные задачи. Ты&nbsp;можешь расти в&nbsp;ту&nbsp;роль, которую хочешь: senior, архитектор, тимлид. А&nbsp;тимлид всегда поможет тебе с&nbsp;реализацией твоих планов. Мы&nbsp;целенаправленно создаем опции для роста</li>
+                <li>Ты&nbsp;можешь работать в&nbsp;офисе в&nbsp;центре Новосибирска или в&nbsp;Академгородке, а&nbsp;можешь выбрать удаленку</li>
+                <li>Также, с&nbsp;первого дня работы ты&nbsp;получаешь полис ДМС.</li>
+            </ul>
+        </div>
+    </div>
+</section>
